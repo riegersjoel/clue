@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2770cef677.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cluedo</title>
+</head>
+
+<body>
+
+    <div class="logo" id="logo"><img src="img/header_logo.png" alt="Cluedo"></div>
+    <div class="container" id="container"></div>
+    <button id="clear-btn" class="clear-btn">Neues Spiel</button>
+
+
+    <!-- MODALS -->
+    <div class="modal" id="number-modal">
+        <div class="modal-content">
+            <h2>Wieviele spielen mit?</h2>
+            <div class="form-group">
+                <label for="num">Anzahl Spieler:</label>
+                <input type="number" name="num" id="num">
+            </div>
+            <p class="error-message hide">So viele? Gib eine andere Zahl ein.</p>
+            <button type="submit" id="num-btn">Ok</button>
+        </div>
+    </div>
+
+    <div class="modal" id="names-modal">
+        <div class="modal-content">
+            <h2>Wer spielt mit?</h2>
+            <button type="submit" id="names-btn">Ok</button>
+        </div>
+    </div>
+
+    <div class="modal" id="options-modal">
+        <div class="modal-content">
+            <h2>Welche noch?</h2>
+            <p>Welche anderen Karten könnte er noch haben?</p>
+            <p>Nach welchen Karten wurde noch gefragt?</p>
+            <br>
+            <div class="buttons">
+                <button class="cancel-btn" id="cancel-btn">Abbruch</button>
+                <button type="submit" id="options-btn">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+
+        </div>
+    </div>
+
+    <div class="start-modal" id="start-modal">
+        <div class="loading-container">
+            <div class="loading"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
